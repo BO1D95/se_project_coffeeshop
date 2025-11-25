@@ -3,44 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ Required meta tags -->
     <meta
       name="description"
-      content="PJ Beans — Coffee Shop project, Practicum Stage 2."
+      content="PJ Beans Coffee Shop — enjoy specialty coffee in the Triple Peaks Library."
     />
     <meta name="author" content="PJ Beans" />
-    <title>PJ Beans — Coffee Shop</title>
+    <meta
+      name="keywords"
+      content="coffee, cafe, triple peaks, barista, espresso, cappuccino"
+    />
 
-    <!-- Normalize -->
-    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <title>PJ Beans Coffee Shop</title>
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./pages/index.css" />
-
-    <!-- Fonts -->
+    <!-- ✅ Correct font connections -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Favicon -->
+    <!-- ✅ Normalize -->
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+
+    <!-- ✅ Main stylesheet -->
+    <link rel="stylesheet" href="./pages/index.css" />
+
+    <!-- ✅ Favicon -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
   </head>
 
-  <body class="page">
-    <!-- HEADER -->
-    <header class="header">
-      <nav class="header__nav">
-        <a href="#recipes" class="header__link">Recipes</a>
-        <a href="#reservation" class="header__link">Book a table</a>
-        <a href="#menu" class="header__link">Menu</a>
-        <a href="#contacts" class="header__link">Contacts</a>
-      </nav>
-      <div class="header__content">
+  <body>
+    <!-- ✅ Required wrapper -->
+    <div class="page">
+      <!-- HEADER -->
+      <header class="header">
+        <!-- ✅ nav class added -->
+        <nav class="nav">
+          <a href="#recipes" class="nav__link">Recipes</a>
+          <a href="#menu" class="nav__link">Menu</a>
+          <a href="#reservation" class="nav__link">Book a table</a>
+          <a href="#contacts" class="nav__link">Contacts</a>
+        </nav>
+
         <h1 class="header__title">
           Specialty coffee
           <span class="header__accent">in the Triple Peaks Library</span>
         </h1>
-        <p class="header__subtitle">
+        <p class="header__description">
           Welcome to our study zone! We’ve got the coffee to energize you and
           the cozy vibes to help you get creative.
         </p>
@@ -49,122 +61,95 @@
           Mon–Fri 10:00–19:00<br />
           Sat–Sun 11:00–18:00
         </p>
-        <img
-          src="./images/header-image.png"
-          alt="Coffee beans and cup"
-          class="header__image"
-        />
-      </div>
-    </header>
+      </header>
 
-    <!-- MAIN -->
-    <main class="content">
-      <!-- RECIPES -->
-      <section id="recipes" class="recipes">
-        <h2 class="recipes__title">Recipes</h2>
-        <p class="recipes__subtitle">
-          Check out some recipes we’ve collected for your home-brewing
-          convenience:
-        </p>
-        <div class="recipes__cards">
-          <article class="recipes__card">
-            <img
-              src="./images/recipe-aeropress.jpg"
-              alt="Aeropress coffee"
-              class="recipes__image"
-            />
-            <h3 class="recipes__card-title">Aeropress recipe ~5 min</h3>
+      <!-- MAIN -->
+      <main class="content">
+        <!-- ✅ recipes__title, recipes__subtitle, recipes__videos -->
+        <section id="recipes" class="recipes">
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we’ve collected for your home-brewing
+            convenience:
+          </p>
+
+          <div class="recipes__videos">
             <iframe
-              class="recipes__video"
+              class="recipes__iframe"
               src="https://www.youtube.com/embed/ik9m3wFNR0Y"
               title="Aeropress Recipe"
               frameborder="0"
               allowfullscreen
             ></iframe>
-          </article>
-          <article class="recipes__card">
-            <img
-              src="./images/recipe-frenchpress.jpg"
-              alt="French press coffee"
-              class="recipes__image"
-            />
-            <h3 class="recipes__card-title">French press recipe ~15 min</h3>
             <iframe
-              class="recipes__video"
+              class="recipes__iframe"
               src="https://www.youtube.com/embed/V1ZB0B7lMPY"
               title="French Press Recipe"
               frameborder="0"
               allowfullscreen
             ></iframe>
-          </article>
-        </div>
-      </section>
+          </div>
+        </section>
 
-      <!-- MENU -->
-      <section id="menu" class="menu">
-        <h2 class="menu__title">Menu</h2>
-        <p class="menu__text">
-          We brew coffee from locally roasted, Fairtrade certified beans and use
-          biodegradable cups. All teas from our collection are $2/cup.
-        </p>
-        <h3 class="menu__subtitle">Coffee</h3>
-        <ul class="menu__list">
-          <li class="menu__item">Filter — Regular 12oz $1 | Large 16oz $1.5</li>
-          <li class="menu__item">
-            Espresso — Macchiato $2.25 | Cortado $2.5 | Mocha $3
-          </li>
-        </ul>
-        <h3 class="menu__subtitle">Bakery</h3>
-        <ul class="menu__list">
-          <li class="menu__item">Almond Croissant — $2</li>
-          <li class="menu__item">Banana Bread — $1.75</li>
-          <li class="menu__item">Blueberry Muffin — $1.5</li>
-        </ul>
-      </section>
+        <!-- MENU -->
+        <section id="menu" class="menu">
+          <h2 class="menu__title">Menu</h2>
+          <p class="menu__text">
+            We brew coffee from locally roasted, Fairtrade certified beans and
+            use biodegradable cups.
+          </p>
+          <h3 class="menu__subtitle">Coffee</h3>
+          <ul class="menu__list">
+            <li class="menu__item">
+              Filter — Regular 12oz $1 | Large 16oz $1.5
+            </li>
+            <li class="menu__item">
+              Espresso — Macchiato $2.25 | Cortado $2.5 | Mocha $3
+            </li>
+          </ul>
+          <h3 class="menu__subtitle">Bakery</h3>
+          <ul class="menu__list">
+            <li class="menu__item">Almond Croissant — $2</li>
+            <li class="menu__item">Banana Bread — $1.75</li>
+            <li class="menu__item">Blueberry Muffin — $1.5</li>
+          </ul>
+        </section>
 
-      <!-- RESERVATION -->
-      <section id="reservation" class="reservation">
-        <h2 class="reservation__title">Book a table</h2>
-        <form class="reservation__form">
-          <input
-            type="text"
-            class="reservation__input"
-            placeholder="Your name"
-            required
-          />
-          <input
-            type="email"
-            class="reservation__input"
-            placeholder="Email"
-            required
-          />
-          <input type="date" class="reservation__input" required />
-          <button type="submit" class="reservation__button">Reserve</button>
-        </form>
-      </section>
+        <!-- RESERVATION -->
+        <section id="reservation" class="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form">
+            <input
+              type="text"
+              class="reservation__input"
+              placeholder="Your name"
+              required
+            />
+            <input
+              type="email"
+              class="reservation__input"
+              placeholder="Email"
+              required
+            />
+            <input type="date" class="reservation__input" required />
+            <button type="submit" class="reservation__button">Reserve</button>
+          </form>
+        </section>
 
-      <!-- CONTACTS -->
-      <section id="contacts" class="contacts">
-        <h2 class="contacts__title">Contacts</h2>
-        <address class="contacts__address">
-          123 Library St, Triple Peaks, USA
-        </address>
-        <p class="contacts__phone">+1 (555) 123-4567</p>
-        <img
-          src="./images/map-placeholder.png"
-          alt="Map of coffee shop location"
-          class="contacts__map"
-        />
-      </section>
-    </main>
+        <!-- CONTACTS -->
+        <section id="contacts" class="contacts">
+          <h2 class="contacts__title">Contacts</h2>
+          <address class="contacts__address">
+            123 Library St, Triple Peaks, USA
+          </address>
+          <p class="contacts__phone">+1 (555) 123-4567</p>
+        </section>
+      </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <p class="footer__text">&copy; 2025 PJ Beans</p>
-      <div class="footer__social">
-        <a href="#" class="footer__link">Facebook</a>
-        <a href="#" class="footer__link">Instagram</a>
-      </div>
-    </footer>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p class="footer__text">&copy; 2025 PJ Beans</p>
+      </footer>
+    </div>
   </body>
 </html>
