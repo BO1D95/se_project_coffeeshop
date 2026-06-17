@@ -1,16 +1,25 @@
 # Triple Peaks Coffee Shop
 
-This is the second project of the Software Engineering program at TripleTen. It was created using HTML and CSS, based on the design brief.
+Triple Peaks Coffee Shop is a single-page website for a cafe inside the Triple Peaks Library. The page introduces the coffee shop, shares home-brewing recipe videos, displays a short menu, and includes a reservation form for booking a table.
 
-## Project features
+## Technologies and techniques
 
 - Semantic HTML5
 - Flexbox
 - Positioning
 - Flat BEM file structure
 - A custom form
-- CSS animation and transform
+- Google Fonts
+- Normalize.css
 
-## Plan on improving the project
+## Project features
 
-Add your ideas here :)
+- Header with navigation links to each page section
+- Embedded recipe videos
+- Coffee and bakery menu
+- Table reservation form with required fields
+- Contact information
+
+## Images
+
+The project uses image assets stored in the `images` directory, including the cafe photo and decorative section backgrounds.
