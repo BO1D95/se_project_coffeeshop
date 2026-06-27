@@ -20,6 +20,8 @@ Triple Peaks Coffee Shop is a single-page website for a cafe inside the Triple P
 - Table reservation form with required fields
 - Contact information
 
+![Inside the Triple Peaks Coffee Shop](./images/inside_coffee_shop.png)
+
 ## Images
 
 The project uses image assets stored in the `images` directory, including the cafe photo and decorative section backgrounds.
