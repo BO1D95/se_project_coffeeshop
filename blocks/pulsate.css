@@ -1,0 +1,21 @@
+.pulsate {
+  flex-shrink: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: #1878dc;
+  animation: pulsate 2.5s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 0.8;
+  }
+}

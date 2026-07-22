@@ -1,0 +1,23 @@
+.contacts {
+  padding: 100px 80px;
+  text-align: center;
+}
+
+.contacts__title {
+  margin: 0 0 24px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 400;
+}
+
+.contacts__address {
+  margin: 0;
+  color: #6f6f6f;
+  font-style: normal;
+}
+
+.contacts__phone {
+  margin: 16px 0 0;
+  color: #6f6f6f;
+}

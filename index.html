@@ -21,7 +21,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Noto+Serif:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
   </head>
@@ -36,6 +35,9 @@
             </li>
             <li class="nav__item">
               <a href="#menu" class="nav__link">Menu</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
             </li>
             <li class="nav__item">
               <a href="#reservation" class="nav__link">Book a table</a>
@@ -66,7 +68,7 @@
         </p>
       </header>
 
-      <main class="content">
+      <main>
         <section id="recipes" class="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
@@ -99,22 +101,75 @@
             use biodegradable cups.
           </p>
 
-          <h3 class="menu__subtitle">Coffee</h3>
-          <ul class="menu__list">
-            <li class="menu__item">
-              Filter - Regular 12oz $1 | Large 16oz $1.50
-            </li>
-            <li class="menu__item">
-              Espresso - Macchiato $2.25 | Cortado $2.50 | Mocha $3
-            </li>
-          </ul>
+          <div class="menu__cards">
+            <article class="menu__card">
+              <h3 class="menu__subtitle">Coffee</h3>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <span class="menu__item-name">Filter coffee</span>
+                  <span class="menu__item-price">$1 / $1.50</span>
+                </li>
+                <li class="menu__item">
+                  <span class="menu__item-name">Espresso</span>
+                  <span class="menu__item-price">$2</span>
+                </li>
+                <li class="menu__item">
+                  <span class="menu__item-name">Macchiato</span>
+                  <span class="menu__item-price">$2.25</span>
+                </li>
+                <li class="menu__item">
+                  <span class="menu__item-name">Cortado</span>
+                  <span class="menu__item-price">$2.50</span>
+                </li>
+                <li class="menu__item">
+                  <span class="menu__item-name">Mocha</span>
+                  <span class="menu__item-price">$3</span>
+                </li>
+              </ul>
+            </article>
 
-          <h3 class="menu__subtitle">Bakery</h3>
-          <ul class="menu__list">
-            <li class="menu__item">Almond Croissant - $2</li>
-            <li class="menu__item">Banana Bread - $1.75</li>
-            <li class="menu__item">Blueberry Muffin - $1.50</li>
-          </ul>
+            <article class="menu__card">
+              <h3 class="menu__subtitle">Bakery</h3>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <span class="menu__item-name">Almond croissant</span>
+                  <span class="menu__item-price">$2</span>
+                </li>
+                <li class="menu__item">
+                  <span class="menu__item-name">Banana bread</span>
+                  <span class="menu__item-price">$1.75</span>
+                </li>
+                <li class="menu__item">
+                  <span class="menu__item-name">Blueberry muffin</span>
+                  <span class="menu__item-price">$1.50</span>
+                </li>
+                <li class="menu__item">
+                  <span class="menu__item-name">Chocolate cookie</span>
+                  <span class="menu__item-price">$1.25</span>
+                </li>
+                <li class="menu__item">
+                  <span class="menu__item-name">Cinnamon roll</span>
+                  <span class="menu__item-price">$2.25</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="about" class="about">
+          <div class="about__content">
+            <h2 class="about__title">About the coffee shop</h2>
+            <p class="about__paragraph">
+              Triple Peaks Coffee Shop is a calm place for focused reading,
+              project work, and a reliable cup of coffee between library
+              sessions.
+            </p>
+            <p class="about__paragraph">
+              Our baristas use responsibly sourced beans, simple recipes, and
+              fresh bakery items to keep the menu useful throughout the day.
+            </p>
+          </div>
+          <div class="pulsate" aria-hidden="true"></div>
         </section>
 
         <section id="reservation" class="reservation">
@@ -199,7 +254,36 @@
       </main>
 
       <footer class="footer">
-        <p class="footer__text">&copy; 2025 PJ Beans</p>
+        <img
+          class="footer__logo"
+          src="./images/logo_coffeeshop_light.svg"
+          alt="PJ Beans Coffee Shop logo"
+        />
+        <nav class="footer__social" aria-label="Social media links">
+          <ul class="footer__links">
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                <img
+                  class="footer__social-icon"
+                  src="./images/facebook_white.svg"
+                  alt=""
+                />
+                Facebook
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                <img
+                  class="footer__social-icon"
+                  src="./images/instagram_white.svg"
+                  alt=""
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer__text">&copy; 2026 PJ Beans</p>
       </footer>
     </div>
   </body>

@@ -1,0 +1,49 @@
+.header {
+  min-height: 720px;
+  padding: 30px 80px 40px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+  background-image: url("../images/background_header.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__title {
+  max-width: 470px;
+  margin: 160px 0 0;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+}
+
+.header__accent {
+  display: block;
+  color: #3f96f3;
+  font-style: italic;
+}
+
+.header__description {
+  max-width: 430px;
+  margin: 28px 0 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header__hours {
+  margin: 110px 0 0;
+  color: #6f6f6f;
+}
+
+.header__hours-line {
+  display: block;
+}
+
+.header__image {
+  width: 460px;
+  position: absolute;
+  right: 80px;
+  bottom: 70px;
+}
